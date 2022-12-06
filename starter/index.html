@@ -5,41 +5,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Rani Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
-    <nav>
-    </nav>
+    <div class="container">
+      <h1>Rani Rajput</h1>
+      <nav class="my_navigation" id="myLinks">
+        <ul>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+          <li>
+            <a href="../starter\files\Rani_resume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </nav>
+      <div onclick="myFunction()" class="menu">
+        <a href="javascript:void(0);" class="icon">
+        </a>
+      </div>
+    </div>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
+    <img class="profile-pic" src="../starter/images/02-profile-pic.jpg" alt="Profile Pic"/>
+    <h2>Welcome to my Portfolio</h2>
   </section>
 
   <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
-
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
-
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
+    <div class="container">
+      <!-- about me -->
+      <section class="page-section" id="about">
+        <div class="left_section">
+          <h2>About Me</h2>
+        </div>
+        <div class="right_section">
+          <p>I am an enthusiastic, self-motivated, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well under pressure and adhere to strict deadlines.</p>
+          <p>Along with my existing skills, I am keen and very willing to learn and develop new skills. I can work unsupervised alone or as a member of a team and I like to use my skills to make a positive contribution to the workforce </p>
+       </div>
+      </section>
+    </div>
   </main>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.width === "350px") {
+    x.style.width = "0px";
+  } else {
+    x.style.width = "350px";
+  }
+}
+</script>
 </body>
 
 </html>
